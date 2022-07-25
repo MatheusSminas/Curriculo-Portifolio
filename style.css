@@ -25,6 +25,17 @@ header {
   position: relative;
 }
 
+.img-perfil img {
+border-radius: 50%;
+width: 20%;
+position: absolute;
+left: 15rem;
+top: 10rem;
+opacity: 0;
+animation: moveBanner 1s 0.5s forwards;
+
+}
+
 .img-wrapper {
   width: 100%;
   height: 100%;
@@ -63,7 +74,11 @@ header {
   text-shadow: 0.6rem 0.8rem 4px rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   opacity: 0;
+  top: -2rem;
+  left: 24rem;
   animation: moveBanner 1s 0.5s forwards;
+  white-space: nowrap;
+position: absolute;
 }
 
 .banner p {
@@ -74,6 +89,10 @@ header {
   margin-bottom: 2rem;
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
+  position: absolute;
+  left: 24rem;
+  white-space: nowrap;
+  top: 4rem;
 }
 
 @keyframes moveBanner {

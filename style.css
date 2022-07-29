@@ -251,6 +251,7 @@ position: absolute;
   color: #000;
   border-bottom: solid 3px 434343;
   margin-bottom: 1rem;
+  
 }
 
 .conhecimento-header {
@@ -274,7 +275,7 @@ position: absolute;
 
 .conhecimentos-img-wrapper {
   grid-column: 7 / 11;
-  grid-row: 3 / 5;
+  grid-row: 2 / 20;
   width: 100%;
 }
 
@@ -282,6 +283,59 @@ position: absolute;
   object-fit: cover;
   width: 100%;
 }
+
+.btn-p {
+  position: absolute;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 1em 2.5em;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  background-color: rgb(14, 25, 119);
+  top: 93rem;
+  left: 40.9rem;
+ }
+
+ .btn-p h1{
+font-size: 1.2rem;
+color: white;
+font-family: var(--font-primary)
+ }
+ 
+ .btn-p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+ }
+ 
+ .btn-p:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+ }
+ 
+ .btn-p::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .btn-p::after {
+  background-color: #fff;
+ }
+ 
+ .btn-p:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+
+/* SESSÃO PROJETOS */
 
 .projetos {
   display: flex;
